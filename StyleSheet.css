@@ -1,5 +1,105 @@
 body {
-
     background-color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+@keyframes inputScale {
+    from{scale: 100%;}
+    to{scale: 110%;}
+}
+
+@keyframes scale {
+    from{scale: 100%;}
+    to{scale: 150%;}
+}
+
+.in {
+    margin:auto;
+    text-align: left;
+    width: auto;
+    max-width: 350px;
+
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+    
+}
+
+input {
+    background-color: black;
+
+    border: 2px white;
+    border-style:solid;
+    border-radius: 20px;
+
+    padding: 5px;
+    margin: 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+    scale: 0.8;
+}
+
+input:focus{
+
+    animation-name: inputScale;
+    animation-duration: 0.5s;
+    scale: 110%;
+    
+
+}
+
+.outText {
+    margin:auto;
+    text-align: left;
+    width: auto;
+    max-width: 350px;
+
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+    
+}
+
+.buttons {
+
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+
+button {
+
+    background-color: black;
+
+    border: 2px white;
+    border-style:solid;
+    border-radius: 20px;
+
+    padding: 10px;
+    margin: 5px;
+
+    color: beige;
+    font-weight: bold;
+    font-size: large;
+    
+
+}
+
+button:active{
+    background-color: olive;
+}
+
+button:hover {
+    animation-name: scale;
+    animation-duration: 0.5s;
+    scale: 150%;
+}
+
+a {
+    color: darkolivegreen;
 }
