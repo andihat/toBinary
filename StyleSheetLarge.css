@@ -1,0 +1,116 @@
+body {
+    background-color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transform: scale(1.5);
+    transform-origin: 0 0;
+    overflow-x: hidden;
+    width: fit-content;
+
+}
+
+.in {
+    
+    margin:auto;
+    text-align: left;
+    width: auto;
+    max-width: 350px;
+    
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+    
+}
+
+.outText {
+    
+    margin:auto;
+    text-align: left;
+    width: auto;
+    max-width: 350px;
+
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+
+    
+    
+}
+
+.buttons {
+
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+
+input {
+    background-color: black;
+
+    border: 2px white;
+    border-style:solid;
+    border-radius: 20px;
+
+    padding: 5px;
+    margin: 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+    scale: 0.8;
+}
+
+input:focus{
+
+    animation-name: inputScale;
+    animation-duration: 0.5s;
+    scale: 110%;
+    
+
+}
+
+button {
+
+    background-color: black;
+
+    border: 2px white;
+    border-style:solid;
+    border-radius: 20px;
+
+    padding: 10px;
+    margin: 5px;
+
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    
+
+}
+
+@keyframes inputScale {
+    from{scale: 100%;}
+    to{scale: 110%;}
+}
+
+@keyframes scale {
+    from{scale: 100%;}
+    to{scale: 150%;}
+}
+
+button:active{
+    background-color: olive;
+    
+}
+
+button:hover {
+    animation-name: scale;
+    animation-duration: 0.5s;
+    scale: 150%;
+}
+
+a {
+    color: darkolivegreen;
+}
