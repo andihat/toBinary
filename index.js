@@ -16,15 +16,19 @@ document.addEventListener("DOMContentLoaded", function() {
       } else if (isNaN(decimalInRaw) == false) {
         
         let decimalNumber = parseInt(decimalInRaw);
+        
+        if (isNaN(decimalNumber)) {
+          decimalNumber = 0;
+        }
 
         let binaryNumber = Number(decimalNumber).toString(2);
-        document.getElementById("binaryOut").innerHTML = binaryNumber;
+        document.getElementById("binaryOut").innerHTML = "Binary: " + binaryNumber;
 
         let octalNumber = Number(decimalNumber).toString(8);
-        document.getElementById("octalOut").innerHTML = octalNumber;
+        document.getElementById("octalOut").innerHTML = "Octal: " + octalNumber;
 
         let hexNumber = Number(decimalNumber).toString(16);
-        document.getElementById("hexOut").innerHTML = hexNumber;
+        document.getElementById("hexOut").innerHTML = "Hexadecimal: " + hexNumber;
 
       }
     };
