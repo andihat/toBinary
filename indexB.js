@@ -17,14 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
         
         let binaryNumber = parseInt(binaryInRaw);
 
+        if (isNaN(binaryNumber)) {
+          binaryNumber = 0;
+        }
+
         let decimalNumber = parseInt(binaryNumber, 2);
-        document.getElementById("decimalOut").innerHTML = decimalNumber;
+        document.getElementById("decimalOut").innerHTML = "Decimal: " + decimalNumber;
 
         let octalNumber = Number(decimalNumber).toString(8);
-        document.getElementById("octalOut").innerHTML = octalNumber;
+        document.getElementById("octalOut").innerHTML = "Octal: " + octalNumber;
 
         let hexNumber = Number(decimalNumber).toString(16);
-        document.getElementById("hexOut").innerHTML = hexNumber;
+        document.getElementById("hexOut").innerHTML = "Hexadecimal: " + hexNumber;
 
       }
     };
