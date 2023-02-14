@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="StyleSheet.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width:800px)"
+      href="StyleSheetLarge.css"
+    />
     <title>toBinary</title>
   </head>
   <body>
     <script src="indexB.js"></script>
-    <div>
+    <div class="in">
       <h1>Binary:</h1>
       <input type="text" id="Binary" />
     </div>
-    <div>
-      <h3>Decimal:</h3>
-      <h3 id="decimalOut"></h3>
+    <div class="outText">
+      <h3 id="decimalOut">Decimal:</h3>
     </div>
-    <div>
-      <h3>Octal:</h3>
-      <h3 id="octalOut"></h3>
+    <div class="outText">
+      <h3 id="octalOut">Octal:</h3>
     </div>
-    <div>
-      <h3>Hexadecimal:</h3>
-      <h3 id="hexOut"></h3>
+    <div class="outText">
+      <h3 id="hexOut">Hexadecimal:</h3>
     </div>
-    <div>
+    <div class="buttons">
       <a href="https://andihat.github.io/toBinary/index.html">
         <button>From decimal</button>
       </a>
